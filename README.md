@@ -88,7 +88,7 @@ python app.py
 
 
 
-如果你想直接使用，可以访问 进行下载
+如果你想直接使用，可以访问 [releases](https://github.com/baobaoJK/JiTu/releases/tag/office) 进行下载
 
 请在电脑上安装 NGINX 或 Apache 服务以确保前端页面能访问
 
