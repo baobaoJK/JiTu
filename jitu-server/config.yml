@@ -1,0 +1,12 @@
+server:
+  port: 4932
+  host: 0.0.0.0
+  debug: true
+  upload-folder: D:\Images\JiTu\Upload
+  name: "己图"
+mysql:
+  host: localhost
+  port: 3306
+  username: root
+  password: '123456'
+  database: jitu

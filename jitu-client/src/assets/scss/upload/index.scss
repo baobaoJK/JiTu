@@ -1,0 +1,90 @@
+@use '../variable.scss' as *;
+#upload {
+  min-height: calc(100% - 32px);
+  padding-top: 32px;
+  background-color: #f3f4f6;
+}
+
+.title {
+  font-size: 28px;
+  color: $subColor;
+  margin-bottom: 16px;
+  text-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.12),
+    0 0 6px rgba(0, 0, 0, 0.04);
+}
+
+.tips {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.el-icon--upload {
+  font-size: 80px;
+  transition: all 0.3s;
+  &:hover {
+    color: $mainColor;
+  }
+}
+
+.custom-file {
+  position: relative;
+  display: flex;
+  width: 100%;
+  flex: 1;
+
+  .custom-file-right {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 16px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .custom-file-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 10;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+  }
+
+  .custom-file-left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    flex: 1;
+
+    .remove-file {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: #f56c6c;
+      color: #fff;
+      cursor: pointer;
+      transition: all 0.3s;
+
+      &:hover {
+        background-color: #ff4d4f;
+      }
+    }
+  }
+}

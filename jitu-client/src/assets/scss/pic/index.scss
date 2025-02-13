@@ -1,0 +1,119 @@
+@use '../variable.scss' as *;
+
+#pic {
+  @extend %fullview;
+  background-color: #f3f4f6;
+}
+
+.aside {
+  width: 220px;
+  height: calc(100vh - 60px);
+  background-color: #fff;
+  border-right: 1px solid #e4e7ed;
+  border-left: 1px solid #e4e7ed;
+  transition: all 1s ease-in-out;
+
+  &.close {
+    width: 0px;
+  }
+  .menu {
+    border-right: none;
+
+    .el-menu-item {
+      i,
+      div {
+        flex: 1;
+      }
+      span {
+        flex: 8;
+      }
+    }
+  }
+}
+
+.main {
+  padding: 0;
+
+  .options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 48px;
+    background-color: #fff;
+    padding: 0 16px;
+    box-sizing: border-box;
+
+    .options-left,
+    .options-mid,
+    .options-right {
+      display: flex;
+      flex: 1;
+    }
+
+    .options-left {
+      .show-folder-panel {
+        margin-right: 32px;
+      }
+    }
+
+    .options-mid {
+      justify-content: center;
+      text-align: center;
+    }
+
+    .options-right {
+      justify-content: flex-end;
+    }
+
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  .pagination-box {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 32px 0;
+  }
+
+  .pic-drawer {
+    .drawer-item {
+      margin-bottom: 16px;
+
+      .title {
+        font-size: 14px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .empty-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 108px);
+    color: #969696;
+    letter-spacing: 8px;
+  }
+}
+
+.folder-item {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  padding: 8px 16px;
+
+  &:hover {
+    background-color: #f3f4f6;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  span {
+    margin-left: 16px;
+  }
+}

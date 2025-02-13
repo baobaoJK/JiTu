@@ -1,0 +1,36 @@
+.el-button {
+  span {
+    margin: 0 !important;
+  }
+}
+
+%item {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 10px;
+    width: calc(100% - 20px);
+    height: calc(100% - 16px);
+    background-color: #f3f4f6;
+    border-radius: 4px;
+  }
+  span {
+    z-index: 1;
+  }
+}
+.el-menu-item {
+  &:hover {
+    background-color: transparent !important;
+
+    @extend %item;
+  }
+  &.is-active {
+    @extend %item;
+  }
+}
+
+.el-dropdown-menu {
+  .delete {
+    color: #ff4141;
+  }
+}

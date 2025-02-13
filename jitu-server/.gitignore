@@ -1,0 +1,25 @@
+# Logs
+logs
+*.log
+
+node_modules
+.DS_Store
+dist
+dist-ssr
+build
+coverage
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+__pycache__
+
+
+*.tsbuildinfo
